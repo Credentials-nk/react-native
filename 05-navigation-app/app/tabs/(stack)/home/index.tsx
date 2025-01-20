@@ -10,7 +10,7 @@ const HomeScreen = () => {
           variant="contained"
           color="default-light"
           clasName="mb-2"
-          onPress={() => router.push("/products")}
+          onPress={() => router.push("/tabs/(stack)/products")}
           onLongPress={() => console.log("On long press...")}
         >
           Productos
@@ -19,7 +19,7 @@ const HomeScreen = () => {
         <CustomButton
           bg="secondary"
           clasName="mb-2"
-          onPress={() => router.push("/profile")}
+          onPress={() => router.push("/tabs/(stack)/profile")}
           onLongPress={() => console.log("On long press...")}
         >
           Profile
@@ -27,17 +27,17 @@ const HomeScreen = () => {
 
         <CustomButton
           bg="terciary"
-          onPress={() => router.push("/settings")}
+          onPress={() => router.push("/tabs/(stack)/settings")}
           onLongPress={() => console.log("On long press...")}
         >
           Settings
         </CustomButton>
 
-        <Link href="/products" asChild>
+        <Link href="/tabs/products" asChild>
           <CustomButton
             variant="text"
             color="primary"
-            onPress={() => router.push("/products")}
+            onPress={() => router.push("/tabs/products")}
           >
             Productos
           </CustomButton>
